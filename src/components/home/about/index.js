@@ -1,8 +1,8 @@
 import picture from './'
 import React from 'react'
 import './index.scss'
-import background from '../../../img/planet.png'
-import phone from '../../../img/phone-layers.png'
+import background from './images/planet.png'
+import phone from './images/phone-layers.png'
 
 const About = () => {
   return (

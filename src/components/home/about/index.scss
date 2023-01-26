@@ -111,7 +111,7 @@ h1 {
         display: none;
     }
     .gradient{
-        box-shadow: 2px -2px 1000px 100px rgb(42, 5, 87);
+        box-shadow: 2px -2px 800px 50px rgb(42, 5, 87);
     }
 }
 
@@ -126,18 +126,18 @@ h1 {
         display:none;
     }
     .gradient{
-        box-shadow: 1px -1px 1000px 25px rgb(42, 5, 87);       
+        box-shadow: 1px -1px 600px 25px rgb(42, 5, 87);       
     }
 }
 @media only screen and (max-height:560px){
     .gradient{
-        box-shadow: 1px -1px 250px 5px rgb(42, 5, 87);
+        box-shadow: 1px -1px 300px 5px rgb(42, 5, 87);
     }
 }
 
 @media only screen and (max-height:450px){
     .gradient{
         display:none;
-        box-shadow: 0.5px -0.5px 50px 10px rgb(42, 5, 87);
+        box-shadow: 0.5px -0.5px 50px 2px rgb(42, 5, 87);
     }
 }
