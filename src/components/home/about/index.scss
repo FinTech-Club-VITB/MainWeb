@@ -45,7 +45,7 @@ body {
     height:100vh;
 }
 
-.gradient{
+.gradabout{
     width:22.625rem;
     height:24.625rem;
     border-top-left-radius:50%;
@@ -124,7 +124,7 @@ screen and (max-height:524px) {
 
 @media screen and (max-width:570px){
     .gradient{
-        box-shadow: 0.5px 0.5px 500px 10px rgb(42, 5 ,87);
+        box-shadow: 0.5px -0.5px 500px 10px rgb(42, 5 ,87);
     }
 }
 

@@ -1,1 +1,247 @@
 // Teams Section - Home
+
+
+.gradteams {
+    width: 22.625rem;
+    height: 24.625rem;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: rgb(42, 5, 87);
+    filter: blur(245px);
+    box-shadow: 2px -2px 1000px 100px rgb(42, 5, 87);
+}
+
+.title1 {
+
+    background: linear-gradient(89.46deg, #FF005C 3.8%, #FF007A 30.48%, #FF00E5 55.43%, #DB00FF 85.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 50;
+    font-size: 6rem;
+    line-height: 7.25rem;
+
+    padding-top:3rem;
+    padding-left:4rem;
+    padding-right:2rem;
+}
+
+.team{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card-01 {
+    width: 24.438rem;
+    height: 34.125rem;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+    margin-bottom: 10rem;
+}
+
+.cir-purple{
+    position:relative;
+    left:calc(24.438rem - 2.5rem);
+    bottom:6.5rem;
+    height:10rem;
+    width:10rem;
+
+}
+
+.cir-blue{
+    position:relative;
+    top:calc(34.125rem - 2.5rem);
+    right:2.5rem;
+    height:10rem;
+    width:10rem;
+
+}
+
+.cir-green{
+    position:relative;
+    left:calc(24.438rem - 2.5rem);
+    bottom:6.5rem;
+    height:10rem;
+    width:10rem;
+}
+
+//Media Queries
+
+@media screen and (max-width:1550px) and (max-height:700px){
+    .gradteams{
+        display:none;
+    }
+}
+
+@media screen and (max-width:850px) and (max-height:1000px){
+    .gradteams{
+        box-shadow: 1px -1px 250px 25px rgb(42, 5, 87);
+    }
+}
+
+@media screen and (max-width:930px) and (max-height:1000px){
+    .gradteams{
+        box-shadow: 1px -1px 250px 25px rgb(42, 5, 87);
+    }
+}
+
+@media screen and (max-width:1300px) and (max-height:870px){
+    .gradteams{
+        display:none;
+    }
+}
+@media screen and (max-width:1100px){
+    .card-01{
+        width:42%;
+        margin-top:12rem;
+    }
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+16.5rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+16.5rem;
+    }
+}
+
+@media screen and (max-width:950px){
+
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+13.5rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+13.5rem;
+    }
+}
+
+@media screen and (max-width:870px){
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+6.5rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+6.5rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+3.5rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+3.5rem;
+    }
+}
+
+@media screen and (max-width:670px){
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+1.5rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+1.5rem;
+    }
+}
+
+@media screen and (max-width:650px){
+    .card-01{
+        width:60%;
+        margin-top:10rem;
+    }
+
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+13.5rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+13.5rem;
+    }
+}
+
+@media screen and (max-width:620px){
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+10.5rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+10.5rem;
+    }
+}
+
+@media screen and (max-width:570px){
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+8.5rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+8.5rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+5.5rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+5.5rem;
+    }
+}
+
+@media screen and (max-width:475px){
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+4rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+4rem;
+    }
+}
+
+@media screen and (max-width:450px){
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+2.5rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+2.5rem;
+    }
+}
+
+@media screen and (max-width:430px){
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem)+1.0rem;
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem)+1.0rem;
+    }
+}
+
+@media screen and (max-width:415px){
+    .cir-purple{
+        left:calc(24.438rem - 2.5rem);
+    }
+    .cir-green{
+        left:calc(24.438rem - 2.5rem);
+    }
+}
+@media screen and (max-width:395px){
+    .cir-purple{
+        left:17.8rem;
+    }
+    .cir-green{
+        left:17.8rem;
+    }
+}
