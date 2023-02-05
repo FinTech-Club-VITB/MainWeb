@@ -1,1 +1,268 @@
 // Hero Section
+
+.Hero {
+    margin: 0;
+    background-image: url("./images/herobg.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+    text-align: center;
+}
+
+.Title {
+    color: white;
+    font-size: 14vh;
+    text-shadow: 11px 15px 21px #000000;
+    padding-bottom: 2.5rem;
+}
+
+.subject {
+    margin-top: -65px;
+    color: white;
+    font-size: 3vh;
+    font-family: 'Raleway';
+    letter-spacing: 0.095em;
+    background: linear-gradient(90.43deg, #30FFFF 0%, rgba(99, 189, 255, 0.9) 98.74%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+
+}
+
+.finance {
+    font-family: 'Raleway';
+    background-image: url("./images/dollar3.png"), linear-gradient(90.43deg, #30FFFF 0%, rgba(99, 189, 255, 0.9) 98.74%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    letter-spacing: 0.095em;
+}
+
+
+/* CSS */
+.JoinUs {
+    align-items: center;
+    appearance: none;
+    background-image: linear-gradient(to right, rgba(18, 203, 196, 0.8), rgba(27, 6, 221, 1), rgba(40, 55, 200, 0.7));
+    border-radius: 160px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 8px 30px;
+
+    text-align: center;
+    background-size: 200%;
+    backdrop-filter: blur(15px);
+}
+
+
+.JoinUs:hover {
+    transition: 0.6s;
+    background-position: left;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    width: 15%;
+    margin-top: 14%;
+}
+
+img {
+    width: 30%;
+    cursor: pointer;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    cursor: pointer;
+    bottom: 2px;
+}
+
+.arrow-down1 {
+    border: solid rgba(255, 255, 255, 0.5);
+    border-width: 0 0.7rem 0.7rem 0;
+    border-radius: 2px;
+    display: absolute;
+    padding: 1rem;
+    margin-top: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 2s;
+    bottom: 4px;
+}
+
+.arrow-down2 {
+    border: solid rgba(255, 255, 255, 0.5);
+    border-width: 0 0.7rem 0.7rem 0;
+    border-radius: 2px;
+    display: absolute;
+    padding: 1rem;
+    margin-top: -10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 2s;
+    bottom: 10px;
+}
+
+.arrow:hover {
+
+    .social {
+        margin-top: 10rem;
+    }
+
+    .arrow-down1 {
+        margin-top: 2rem;
+    }
+
+    .arrow-down2 {
+        margin-top: 0.5rem;
+    }
+}
+
+.chat {
+    position: sticky;
+    display: inline-block;
+    float: right;
+    right: 2rem;
+    bottom: 11rem;
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+    background-image: url('./images/chaticon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 10rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 20px;
+    font-size: 2rem;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+
+.chat:hover .tooltiptext {
+    visibility: visible;
+}
+
+//Media Queries
+
+@media screen and (max-width:1300px) {
+    .social {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .social {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .social {
+        width: 20%;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .chat {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .Title {
+        font-size: 13vh;
+    }
+
+    .arrow-down1 {
+        border-width: 0 0.5rem 0.5rem 0;
+        border-radius: 2px;
+    }
+    .arrow-down2 {
+        border-width: 0 0.5rem 0.5rem 0;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .Title {
+        font-size: 12vh;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .Title {
+        font-size: 11vh;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .social {
+        width: 30%;
+        height: 20%;
+    }
+
+    .arrow {
+        margin-top: -60px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .Title {
+        font-size: 10vh;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .Title {
+        font-size: 10vh;
+    }
+
+    .subject {
+        font-size: 2vh;
+    }
+
+    .social {
+        width: 40%;
+    }
+
+    .tooltiptext {
+        font-size: 1.5rem;
+    }
+}
