@@ -1,48 +1,65 @@
 // About Section
-body {
-    background-color: black;
-    // overflow-x:hidden;
-}
-
-
-.aboutus {
-    background: linear-gradient(92.43deg, #87E9FF 0.58%, rgba(5, 221, 251, 0.905294) 13.26%, rgba(107, 228, 255, 0.831176) 23.19%, rgba(6, 196, 255, 0.660706) 34.99%, rgba(0, 194, 255, 0.65) 47.45%, #0025A9 97.83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    width: 30.563rem;
-    padding-left: 3.875rem;
-    padding-top: 5.875rem;
-    padding-right: 5.875rem;
-    font-size: 6rem;
-    line-height: 7.25rem;
-    font-weight: 300;
-    margin:0;
-}
-
-.word{
-    display:block;
-    max-width:396px;
-    font-weight: 300;
-    font-size: 1.505rem;
-    color: #FFFFFF;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-    padding-left: 4.628rem;
-    padding-top: 5.875rem;
-    padding-right:2.013rem;
-    line-height: 1.361rem;
-    
-}
 
 .about{
+    min-height: 100vh;
+    padding: 2rem;
     font-family: 'Inter';
     font-style: normal;
-}
+    .aboutus {
+        background: linear-gradient(92.43deg, #87E9FF 0.58%, rgba(5, 221, 251, 0.905294) 13.26%, rgba(107, 228, 255, 0.831176) 23.19%, rgba(6, 196, 255, 0.660706) 34.99%, rgba(0, 194, 255, 0.65) 47.45%, #0025A9 97.83%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
 
-.aboutfall{
-    height:100vh;
+        width: 32rem;
+        padding: 6rem 4rem 0.2rem;
+        font-size: 6.2rem;
+        line-height: 7.25rem;
+        font-weight: 300;
+    }
+    
+    .line{
+        position:absolute;
+        margin: left 2.8rem;
+        margin-top:9rem;
+        height:0.35rem;
+        width: 4.438rem;
+        transform:rotate(270deg);
+        border:none;   
+        background-image: linear-gradient(to right, rgba(9, 4, 255, 0) -14.11%, rgba(6, 142, 240, 0.56) 103.63%);
+    }
+    
+    .tag{
+        margin-left: 4.5rem;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 300;
+    }
+    
+    .word{
+        display:block;
+        max-width:396px;
+        font-weight: 300;
+        font-size: 1.505rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        padding-left: 4.628rem;
+        padding-top: 5.875rem;
+        padding-right:2.013rem;
+        line-height: 1.361rem;
+    }
+    
+    .phone-layers{
+        margin:0;
+        position:absolute;
+        padding-left: 2%;
+        width: 48%;
+        left: 47%;
+        top: 20%;
+        padding-right:2%;
+        
+    }
 }
 
 .gradabout{
@@ -58,40 +75,11 @@ body {
     box-shadow: 2px -2px 1000px 100px rgb(42, 5, 87);
 }
 
-.phone-layers{
-    margin:0;
-    position:absolute;
-    padding-left: 2%;
-    width: 44.90%;
-    left: 47%;
-    padding-right:2%;
-    
-}
-
 .background{
-    position:fixed;
-    right:0;
-    height: 100vh;
-    max-width:40%;
-}
-
-.tag{
-    margin-left: 6rem;
-    margin-top:0;
-    font-size: 110%;
-    color:#FFFFFF;
-}
-
-.line{
     position:absolute;
-    margin: left 2.5rem;
-    margin-top:9rem;
-    height:2px;
-    width: 4.438rem;
-    max-width:100%;
-    transform:rotate(270deg);
-    border:none;   
-    background-image: linear-gradient(to right, rgba(9, 4, 255, 0) -14.11%, rgba(6, 142, 240, 0.56) 103.63%);
+    right:3rem;
+    height: 97vh;
+    max-width:40%;
 }
 
 //Media Queries Below
