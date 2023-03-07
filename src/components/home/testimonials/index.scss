@@ -2,6 +2,7 @@
 
 .testimonialSection{
   position: relative;
+  
   .testimonialHeading{
     font-style: normal;
     font-weight: 300;
@@ -31,7 +32,7 @@
     .leftArrow{
       position: absolute;
       top: 40%;
-      left: -10%;
+      left: -10rem;
       font-size: 7rem;
       color: #404041;
       cursor: pointer;
@@ -39,7 +40,7 @@
     .rightArrow{
       position: absolute;
       top: 40%;
-      right: -10%;
+      right: -10rem;
       font-size: 7rem;
       color: #404041;
       cursor: pointer;

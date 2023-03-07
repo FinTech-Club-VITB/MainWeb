@@ -1,8 +1,9 @@
 // Hero Section
 
 .objSection{
-    display: grid;
-    justify-items: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     position: relative;
     .objHeading{
         font-style: normal;
@@ -21,10 +22,10 @@
     .objBG{
         position: absolute;
         background-image: url('../../../assets/home/objBG.svg');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        width:  100vw;
-        height: 100vh;
+        min-width:  41vw;
+        min-height: 97vh;
         top: -5rem;
         left: 0;
         z-index: -1;
@@ -32,11 +33,11 @@
 
     .objCards{
         display: flex;
-        margin: 2rem 7rem 10rem;
+        margin: 2rem 5rem 10rem;
         gap: 5.2rem;
         .objCard{
-            width: 35rem;
-            height: 43rem;        
+            width: 32rem;
+            height: 40rem;        
             background: rgba(28, 28, 28, 0.77);
             border-radius: 2rem;
         }
