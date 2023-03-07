@@ -1,35 +1,36 @@
 import React from "react";
 import "./index.scss";
+import Slider from "react-slick";
+import LeftArrow from './leftArrow.js'
+import RightArrow from "./rightArrow";
 
 const Testimonials = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+
+    nextArrow: <RightArrow />,
+    prevArrow: <LeftArrow />
+  };
+
   return (
-    <div>
-      <div className="flex-container-7">
-        {/* <img className="arrow-4" src={arrow4} /> */}
-        <span className="grow-with-us">GROW WITH US</span>
-      </div>
-      <div className="flex-container-8">
-        {/* <img className="chevron-left" src={chevronLeft} /> */}
-        <div className="flex-container-9">
-          <div className="rectangle-73">
-            {/* <img className="rectangle-69" src={rectangle69} /> */}
-            <div className="flex-container-10">
-              <div className="flex-container-11">
-                {/* <img className="person-pin" src={personPin} /> */}
-                <span>ANYBODY</span>
-              </div>
-              <span className="its-time-to-bridge-t">
-                It’s time to bridge the digital and physical. Anybodies helps
-                established brands like Toys’R’Us connect real-life places and
-                products with NFTs.
-              </span>
-            </div>
+    <div className="testimonialSection">
+      <h2 className="testimonialHeading">GROW WITH US</h2>
+      <div className="testimonialSlider">
+        {/* <FaChevronLeft className="leftArrow"/> */}
+        {/* <LeftArrow/> */}
+        <Slider {...settings}>
+          <div className="testimonialSlide">
+            <iframe src="https://www.youtube.com/embed/mH_LFkWxpI0" height={400} width={800} />
           </div>
-          {/* <img className="ellipse-22" src={ellipse22} /> */}
-          {/* <img className="ellipse-19" src={ellipse19} /> */}
-        </div>
-        {/* <img className="chevron-left-1" src={chevronLeft} /> */}
-              
+          <div className="testimonialSlide">
+            <iframe src="https://www.youtube.com/embed/0S6Me1_tnco" height={400} width={800} />
+          </div>
+        </Slider>
+        <div className="testimonialBG1"/>
+        <div className="testimonialBG2"/>
       </div>
     </div>
   );
