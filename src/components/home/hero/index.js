@@ -1,11 +1,12 @@
 import React from 'react'
 import './index.scss'
-import {AiFillLinkedin, AiFillTwitterSquare, AiFillInstagram, AiFillFacebook, MdKeyboardDoubleArrowDown} from "react-icons/ai"
+import {AiFillLinkedin, AiFillTwitterSquare, AiFillInstagram, AiFillYoutube, MdKeyboardDoubleArrowDown} from "react-icons/ai"
 import {MdDoubleArrow} from "react-icons/md"
 
 const Hero = () => {
   return (
     <>
+      <div className='bgimg'></div>
       <div className='heroSection'>
         <div></div>
         <div className='infoSection'>
@@ -15,10 +16,10 @@ const Hero = () => {
         </div>
         <div>
           <div className='social'>
-            <a href=""><AiFillLinkedin/></a>
-            <a href=""><AiFillTwitterSquare/></a>
-            <a href=""><AiFillInstagram/></a>
-            <a href=""><AiFillFacebook/></a>
+            <a href="https://instagram.com/fintechclub_vitb?igshid=ZDdkNTZiNTM="><AiFillInstagram/></a>
+            <a href="https://www.linkedin.com/company/fintech-club-vit-bhopal/"><AiFillLinkedin/></a>
+            <a href="https://twitter.com/fintech_vitb"><AiFillTwitterSquare/></a>
+            <a href="https://youtube.com/@fintechclub-vitb"><AiFillYoutube/></a>
           </div>
           <MdDoubleArrow className='arrow'/>
         </div>

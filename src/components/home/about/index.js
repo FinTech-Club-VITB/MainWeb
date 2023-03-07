@@ -5,16 +5,15 @@ import phone from './images/phone-layers.png'
 
 const About = () => {
   return (
-    <>
+    <div className='aboutSection'>
       <img className="background" src={background} alt="back" />
       <div className="gradabout"/>
-      <div className="about">
-        <h1 className="aboutus">ABOUT US</h1>
+      <div className="infoSection">
+        <h1 className="heading">ABOUT US</h1>
+        <p className="tagline">We built your feuture</p>
+
         <hr className="line" />
-        <p className="tag">
-          We built your feuture
-        </p>
-        <p className="word">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
           and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting,
           remaining essentially unchanged.
@@ -28,7 +27,7 @@ const About = () => {
         <img className="phone-layers" src={phone} data-value="5" alt="phone" />
 
       </div>
-    </>
+    </div>
   )
 }
 
