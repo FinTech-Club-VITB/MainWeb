@@ -9,7 +9,7 @@ const Socials = (props) => {
      style={{bottom: props.bottom??0}}
      className='socialsContainer'>
         <div
-         style={{fontSize: props.size??'2.6rem'}}
+         style={{fontSize: props.size}}
          className='social'>
             <a href="https://instagram.com/fintechclub_vitb?igshid=ZDdkNTZiNTM="><AiFillInstagram/></a>
             <a href="https://www.linkedin.com/company/fintech-club-vit-bhopal/"><AiFillLinkedin/></a>

@@ -1,9 +1,12 @@
 import React from 'react'
+import Content from './content'
 import Hero from './hero'
 import Leads from './leads'
 import Management from './management'
 import Market from './market'
+import PR from './pr'
 import Social from './social'
+import Web from './web'
 
 const Team = () => {
   return (
@@ -13,6 +16,10 @@ const Team = () => {
       <Social/>
       <Management/>
       <Market/>
+      <PR/>
+      <Content/>
+      {/* <Technical/> */}
+      <Web/>
     </div>
   )
 }

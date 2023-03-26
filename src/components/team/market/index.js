@@ -6,7 +6,7 @@ import MarketMember from './member'
 const Market = () => {
   return (
     <div className='marketTeamSection'>
-        <h2 className='heading'>THE SOCIAL MEDIA TEAM</h2>
+        <h2 className='heading'>THE MARKET ANALYST TEAM</h2>
         <div className='members'>
             {marketTeam.map(member => {
                 return <MarketMember {...member}/>
