@@ -1,1 +1,66 @@
 // Hero Section
+
+.objSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    .objHeading{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 7.2rem;
+        margin: 4rem;
+        width: fit-content;
+
+        background: linear-gradient(92.43deg, #9B00FA 0.58%, #9E00FF 38.67%, #FA00FF 69.56%, #BD00FF 106.46%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;        
+    }
+
+    .objBG{
+        position: absolute;
+        background-image: url('../../../assets/home/objBG.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width:  41vw;
+        min-height: 97vh;
+        top: -5rem;
+        left: 0;
+        z-index: -1;
+    }
+
+    .objCards{
+        display: flex;
+        margin: 2rem 5rem 10rem;
+        gap: 5.2rem;
+        .objCard{
+            width: 32rem;
+            height: 40rem;        
+            background: rgba(28, 28, 28, 0.77);
+            border-radius: 2rem;
+        }
+    }
+}
+
+@media(max-width:700px){
+    .objSection{
+        overflow-y: hidden;
+        .objCards{
+            flex-direction: column;
+            align-self: center;
+            .objCard{
+                width: 38rem;
+                height: 30rem;
+            }
+        }
+        .objBG{
+            min-width: 100vw;
+            min-height: 100vh;
+            background-size: auto;
+            top: 0;
+            background-position: center;
+        }
+    }
+}

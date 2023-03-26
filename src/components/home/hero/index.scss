@@ -1,1 +1,155 @@
 // Hero Section
+
+.bgimg{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../../assets/home/herobg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    filter: blur(2px);
+}
+.heroSection {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background: rgba(0, 0, 1, 0.1);
+    mix-blend-mode: hard-light;
+
+    .infoSection{
+        transform: translateY(3rem);
+        .heroHeading {
+            background: linear-gradient(180deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 11rem;
+            font-weight: 900;
+            // animation: shadowMove 2s ease-in-out;
+            // animation-delay: 1s;
+        }
+        
+        .heroSubheading {
+            font-size: 2.5rem;
+            font-family: 'Raleway';
+            font-weight: 600;
+            letter-spacing: 0.2rem;
+        
+            background: linear-gradient(90.43deg, #30FFFF 0%, rgba(99, 189, 255, 0.9) 98.74%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            mix-blend-mode: normal;
+        }
+        
+        .finance {
+            font-size: 2.5rem;
+            font-family: 'Raleway';
+            font-size: 600;
+            background-image: url("../../../assets/home/dollar3.png"), linear-gradient(90.43deg, #30FFFF 0%, rgba(99, 189, 255, 0.9) 98.74%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: cover;
+            letter-spacing: 0.24rem;
+        }
+        
+        .heroJoinUs {
+            background: linear-gradient(90deg, #87F8FF 0%, rgba(31, 215, 255, 0.572917) 41.15%, rgba(31, 70, 206, 0.71) 100%);            border-radius: 16rem;
+            border-width: 0;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-family: 'Raleway';
+            font-size: 2.4rem;
+            line-height: 1.5;
+            margin: 1.8rem;
+            padding: 0.8rem 3rem;
+        
+            backdrop-filter: blur(15px);
+            transition: all ease-in-out 0.5s;
+        }
+        
+        
+        .heroJoinUs:hover {
+            background: linear-gradient(110deg, #87F8FF 0%, rgba(31, 215, 255, 0.57) 41.15%, rgba(31, 70, 206, 0.7) 100%);
+            transform: scale(1.04);
+        }
+    }
+    
+    @keyframes shadowMove {
+        0%{
+            background: linear-gradient(220deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        10%{
+            background: linear-gradient(250deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        20%{
+            background: linear-gradient(290deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        30%{
+            background: linear-gradient(330deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        40%{
+            background: linear-gradient(0deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        50%{
+            background: linear-gradient(30deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        60%{
+            background: linear-gradient(60deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        70%{
+            background: linear-gradient(90deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        80%{
+            background: linear-gradient(120deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        90%{
+            background: linear-gradient(150deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+
+@media(max-width:700px){
+    .bgimg{
+        background-position-x:75%;
+        background-position-y: -3rem;
+        filter: blur(0);
+    }
+    .heroSection{
+        .infoSection{
+            .heroHeading{
+                font-size: 7.2rem;
+                margin-bottom: 3rem;
+            }
+            .heroJoinUs{
+                margin-top: 3.4rem;
+            }
+        }
+    }
+}

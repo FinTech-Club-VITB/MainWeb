@@ -3,7 +3,15 @@ import './index.scss'
 
 const Objectives = () => {
   return (
-    <div>What we do / Objectives</div>
+    <div className='objSection'>
+      <h2 className='objHeading'>WHAT WE DO</h2>
+      <div className='objBG'/>
+      <div className='objCards'>
+        <div className='objCard'></div>
+        <div className='objCard'></div>
+        <div className='objCard'></div>
+      </div>
+    </div>
   )
 }
 

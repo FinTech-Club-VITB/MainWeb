@@ -1,1 +1,113 @@
 // About Section
+
+.aboutSection{
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-style: normal;
+    position: relative;
+
+    .infoSection{
+
+        .heading {
+            background: linear-gradient(92.43deg, #87E9FF 0.58%, rgba(5, 221, 251, 0.905294) 13.26%, rgba(107, 228, 255, 0.831176) 23.19%, rgba(6, 196, 255, 0.660706) 34.99%, rgba(0, 194, 255, 0.65) 47.45%, #0025A9 97.83%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+    
+            width: fit-content;
+            padding: 0.2rem 5rem;
+            font-size: 7.2rem;
+            line-height: 7.25rem;
+            font-weight: 300;
+        }
+    
+        .tagline{
+            margin-left: 5rem;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        .line{
+            position:absolute;
+            margin: 7.8rem 2.8rem;
+            height:0.35rem;
+            width: 4.4rem;
+            transform:rotate(270deg);
+            border:none;   
+            background-image: linear-gradient(to right, rgba(9, 4, 255, 0) -14.11%, rgba(6, 142, 240, 0.56) 103.63%);
+        }        
+        
+        .para{
+            max-width:35rem;
+            font-weight: 300;
+            font-size: 1.3rem;
+            padding: 6rem 2rem 0rem 8.6rem;
+            line-height: 2rem;
+        }
+    }
+
+    .gradabout{
+        width:23rem;
+        height:25rem;
+        position:absolute;
+        left: -1rem;
+        bottom: 0;
+        z-index: -1;
+        background: linear-gradient(180deg, #3300FF 0%, #B600F7 100%);
+        filter: blur(15rem);
+    }
+    
+    .background{
+        position:absolute;
+        top: 3rem;
+        right:3rem;
+        max-height: 100vh;
+        max-width:40%;
+        z-index: -1;
+    }
+    
+    .phone-layers{
+        transform: translateY(3rem);
+        max-height: 70vh;
+        max-width: 50vw;
+    }
+}
+
+@media(max-width:700px){
+    .aboutSection{
+        min-height: unset;
+        justify-content: unset;
+        flex-direction: column;
+        padding: 10rem 0 5rem;
+        .infoSection{
+            .heading{
+                font-size: 8rem;
+                // padding: 0.8rem 0 0.8rem 2rem;
+            }
+            .tagline{
+                font-size: 2.2rem;
+            }
+            .para{
+                font-size: 1.8rem;
+                max-width: 70vw;
+                line-height: 2.5rem;
+            }
+        }
+        .phone-layers{
+            // position: absolute;
+            opacity: 0.75;
+            z-index: -1;
+            max-width: 90vw;
+            max-height: none;
+            mix-blend-mode: hard-light;
+        }
+        .background{
+            max-width: unset;
+            max-height: 50vh;
+        }
+    }
+}

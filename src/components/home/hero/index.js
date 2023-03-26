@@ -1,9 +1,21 @@
 import React from 'react'
 import './index.scss'
+import Socials from '../../common/socials'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <>
+      <div className='bgimg'></div>
+      <div className='heroSection'>
+        <div className='infoSection'>
+          <h1 className="heroHeading">FINTECH CLUB</h1>
+          <h3><span className='heroSubheading'>DEFINING THE FUTURE OF </span><span className='finance'>FINANCE</span></h3>
+          <button className='heroJoinUs' role="button">JOIN NOW</button>
+        </div>
+        <Socials/>
+      </div>
+    </>
+
   )
 }
 

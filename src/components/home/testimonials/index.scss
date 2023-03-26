@@ -1,1 +1,103 @@
 // Testimonials Section
+
+.testimonialSection{
+  position: relative;
+  
+  .testimonialHeading{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 7.2rem;
+    width: fit-content;
+    margin: 4rem 10rem;
+
+    background: linear-gradient(90.25deg, #CCEB9A 2.14%, #48DC7A 30.78%, #00FFD1 57.66%, #00B2FF 79.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .testimonialSlider{
+    width: 65vw;
+    margin: 7rem auto 4rem;
+
+    .testimonialSlide{
+      font-size: 14rem;
+      text-align: center;
+      iframe{
+        border: 0;
+        width: 65vw;
+        height: 50vh;
+      }
+    }
+
+    .leftArrow{
+      position: absolute;
+      top: 40%;
+      left: -10rem;
+      font-size: 7rem;
+      color: #404041;
+      cursor: pointer;
+    }
+    .rightArrow{
+      position: absolute;
+      top: 40%;
+      right: -10rem;
+      font-size: 7rem;
+      color: #404041;
+      cursor: pointer;
+    }
+
+    .slick-dots li button:before{
+      color: white;
+      font-size: 1rem;
+    }
+    .testimonialBG1{
+      position: absolute;
+      width: 28rem;
+      height: 28rem;
+      left: 18%;
+      top: 28%;
+
+      z-index: -1;
+      background: linear-gradient(180deg, #3300FF 0%, #B600F7 100%);
+      filter: blur(14rem);
+    }
+    .testimonialBG2{
+      position: absolute;
+      background-image: url('../../../assets/home/testimonialElipse.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: -10%;
+      right: 6%;
+      z-index: -1;
+      height: 30rem;
+      width: 40rem;
+    }
+  }
+}
+
+@media(max-width:700px){
+  .testimonialSection{
+    .testimonialHeading{
+      font-size: 6rem;
+      margin-bottom: 10rem;
+    }
+    .testimonialSlider{
+      width: 70vw;
+  
+      .testimonialSlide{
+        iframe{
+          width: 70vw;
+          height: 45vw;
+        }
+      }
+      .slick-dots li button:before{
+        font-size: 1.6rem;
+      }
+      .testimonialBG2{
+        right: -8%;
+      }
+    } 
+  }
+}

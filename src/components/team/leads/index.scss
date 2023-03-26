@@ -1,0 +1,72 @@
+.leadSection{
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    .heading{
+        background: linear-gradient(90deg, #FFA1B8 0%, #F300EB 50%, #3527A3 90.5%);
+        align-self: end;
+        margin: 4rem 8rem;
+        width: fit-content;
+        font-weight: 300;
+        font-size: 7rem;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    .members{
+        display: flex;
+        max-width: 93vw;
+        min-height: 70vh;
+        background: url('../../../assets/teams/coreBG.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Javanese Text';
+        .member{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 25vh;
+            // height: 100%;
+            gap: 2rem;
+            div{
+                height: 1rem;
+            }
+            img{
+                height: 15rem;
+                width: 15rem;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            h2{
+                width: 12vw;
+                line-height: 3rem;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 1.8rem;
+                height: 4rem;
+                padding: 1rem 0;
+            }
+            svg{
+                padding: 1rem;
+                font-size: 3.6rem;
+                height: 5rem;
+            }
+            h3{
+                height: 3rem;
+                font-weight: 400;
+                font-size: 1.6rem;
+            }
+            p{
+                height: 7rem;
+                font-family: 'inter';
+                max-width: 22vh;
+                // font-size: 1.2rem;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
