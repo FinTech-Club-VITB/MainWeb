@@ -2,6 +2,7 @@
 
 .teamSection{
     position: relative;
+    overflow: hidden;
     .teamsHeading{
         font-style: normal;
         font-weight: 300;
@@ -21,37 +22,36 @@
         margin: 10rem 0;
         gap: 9rem;
         justify-content: center;
-    }
-
-    .teamsCard{
-        height: 42rem;
-        width: 34rem;
-        background: rgba(255, 255, 255, 0.045);
-        border-radius: 2rem;
-        position: relative;
-        .coin{
-            background-size: contain;
-            background-repeat: no-repeat;
-            position: absolute;
-            height: 12rem;
-            width: 12rem;
-        }
-        .bitcoin{
-            background-image: url(../../../assets/home/bitcoin.svg);
-            right: -4rem;
-            top: -4rem;
-        }
-        .eth{
-            background-image: url(../../../assets/home/eth.svg);
-            bottom: -7rem;
-            left: -4rem;
-            height: 16rem;
-            width: 16rem;
-        }
-        .rupees{
-            background-image: url(../../../assets/home/rupees.svg);
-            top: -6rem;
-            right: -7rem;
+        .teamsCard{
+            height: 38rem;
+            width: 30rem;
+            background: rgba(255, 255, 255, 0.045);
+            border-radius: 2rem;
+            position: relative;
+            .coin{
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                height: 12rem;
+                width: 12rem;
+            }
+            .bitcoin{
+                background-image: url(../../../assets/home/bitcoin.svg);
+                right: -4rem;
+                top: -4rem;
+            }
+            .eth{
+                background-image: url(../../../assets/home/eth.svg);
+                bottom: -7rem;
+                left: -4rem;
+                height: 16rem;
+                width: 16rem;
+            }
+            .rupees{
+                background-image: url(../../../assets/home/rupees.svg);
+                top: -6rem;
+                right: -7rem;
+            }
         }
     }
 
@@ -67,3 +67,16 @@
     }
 }
 
+@media(max-width:700px){
+    .teamSection{
+        .teamsCards{
+            flex-direction: column;
+            align-items: center;
+
+            .teamsCard{
+                width: 38rem;
+                height: 30rem;
+            }
+        }
+    }
+}

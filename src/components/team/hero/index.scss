@@ -1,0 +1,37 @@
+.teamsHeroSection{
+    background: url('../../../assets/teams/heroBG.svg');
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    // flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 3rem;
+    position: relative;
+    .heading{
+        font-family: 'Inter';
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 9rem;
+            font-weight: 500;
+            max-width: 35%;
+            text-shadow: 0.5rem 0.5rem 3rem #969696;
+        }
+        span{
+            font-size: 8.5rem;
+            color: #00D1FF;
+            text-shadow: 0.5rem 0.5rem 3rem #02B6DE;
+            writing-mode: vertical-rl;
+            transform: rotateZ(180deg);
+        }
+    }
+    .para{
+        margin: 3rem;
+        font-family: 'Inter';
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        max-width: 30%;
+    }
+}

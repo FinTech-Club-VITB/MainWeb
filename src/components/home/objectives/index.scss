@@ -43,3 +43,24 @@
         }
     }
 }
+
+@media(max-width:700px){
+    .objSection{
+        overflow-y: hidden;
+        .objCards{
+            flex-direction: column;
+            align-self: center;
+            .objCard{
+                width: 38rem;
+                height: 30rem;
+            }
+        }
+        .objBG{
+            min-width: 100vw;
+            min-height: 100vh;
+            background-size: auto;
+            top: 0;
+            background-position: center;
+        }
+    }
+}

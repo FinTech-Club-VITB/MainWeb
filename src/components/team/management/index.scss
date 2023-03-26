@@ -1,0 +1,50 @@
+.managementTeamSection{
+    min-height: 100vh;
+    background: url('../../../assets/teams/managementBG.svg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .heading{
+        position: absolute;
+        width: 96vw;
+        text-align: center;
+        top: 46%;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 6rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .members{
+        padding: 10vh 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-between;
+        min-height: 80vh;
+        background: url('../../../assets/teams/managementMiddle.svg') no-repeat center;
+        background-size: contain;
+        margin-right: 5rem;
+        gap: 3rem;
+        .member{
+            text-align: center;
+            width: 15rem;
+            height: 22rem;
+            img{
+                height: 15rem;
+                width: 15rem;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            h3{
+                font-family: 'Javanese Text';
+                font-weight: 400;
+                font-size: 2rem;
+            }
+            p{
+                font-family: 'Inter';
+                font-weight: 300;
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -1,1 +1,89 @@
 // Footer Styles
+
+.footerSection{
+    background-color: rgba(17, 17, 17, 0.75);
+    min-height: 9rem;
+    position: relative;
+    padding-top: 1rem;
+    .footerTopSection{
+        display: flex;
+        justify-content: space-around;
+        // align-items: center;
+        padding: 2rem;
+        h3{
+            font-family: 'Source Sans Pro';
+            font-weight: 700;
+            font-size: 2rem;
+            margin: 1rem 0 ;
+        }
+        p{
+            font-family: 'Source Sans Pro';
+            font-weight: 300;
+            font-size: 1rem;
+        }
+        .footerClubInfo{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin: 3rem 0rem 3rem 3rem;
+            h2{
+                background: linear-gradient(92.43deg, #9B00FA 0.58%, #9E00FF 38.67%, #FA00FF 69.56%, #BD00FF 106.46%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                width: fit-content;
+    
+                font-family: 'Inter';
+                font-weight: 300;
+                font-size: 3.8rem;
+            }
+            p{
+                font-family: 'Inter';
+                font-weight: 300;
+                font-size: 1.2rem;
+    
+                min-width: 22rem;
+                width: min-content;
+                padding: 0.8rem 0 0 0.4rem;
+                color: rgba(255, 255, 255, 0.5);
+            }
+            hr{
+                height: 5rem;
+                border: 0.08rem solid rgba(185, 185, 185, 0.2);
+            }
+        }
+    }
+
+    .footerBottomSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+
+        p{
+            color: rgba(255, 255, 255, 0.2);
+            text-align: center;
+            font-size: 1.24rem;
+            padding-bottom: 1rem;
+        }
+    
+        hr{
+            border-color: rgba(255, 255, 255, 0.2);
+            width: 96%;
+            margin-bottom: 7rem;
+        }
+    }
+}
+
+@media(max-width:700px){
+    .footerSection{
+        .footerTopSection{
+            h3{
+                font-size: 2.2rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

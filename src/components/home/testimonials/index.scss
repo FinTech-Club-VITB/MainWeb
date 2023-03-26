@@ -74,3 +74,28 @@
     }
   }
 }
+
+@media(max-width:700px){
+  .testimonialSection{
+    .testimonialHeading{
+      font-size: 6rem;
+      margin-bottom: 10rem;
+    }
+    .testimonialSlider{
+      width: 70vw;
+  
+      .testimonialSlide{
+        iframe{
+          width: 70vw;
+          height: 45vw;
+        }
+      }
+      .slick-dots li button:before{
+        font-size: 1.6rem;
+      }
+      .testimonialBG2{
+        right: -8%;
+      }
+    } 
+  }
+}

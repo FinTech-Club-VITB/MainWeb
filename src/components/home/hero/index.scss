@@ -13,14 +13,16 @@
 .heroSection {
     height: 100vh;
     width: 100vw;
+    position: relative;
     display: grid;
-    align-items: flex-end;
+    align-items: center;
     justify-items: center;
     text-align: center;
     background: rgba(0, 0, 1, 0.1);
     mix-blend-mode: hard-light;
 
     .infoSection{
+        transform: translateY(3rem);
         .heroHeading {
             background: linear-gradient(180deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);
             background-clip: text;
@@ -78,33 +80,6 @@
         }
     }
     
-    .social {
-        display: flex;
-        padding: 0.8rem;
-        gap: 0.6rem;
-        a{
-            font-size: 2.6rem;
-            text-decoration: none;
-            color: white;
-        }
-        a:hover{
-            transition: 0.6s;
-            transform: scale(1.2);
-        }
-    }
-    
-    .arrow{
-        color: rgba(255,255,255,0.2);
-        font-size: 3rem;
-        transform: rotateZ(90deg);
-        margin-bottom: 1.8rem;
-        animation: slowFloat 3s infinite ease-in-out;
-    }
-    
-    @keyframes slowFloat {
-        45%, 55%{transform: rotateZ(90deg) translateX(0.5rem);}
-    }
-
     @keyframes shadowMove {
         0%{
             background: linear-gradient(220deg, #FFFFFF 52.06%, rgba(255, 255, 255, 0.07) 147.1%);

@@ -1,0 +1,57 @@
+.socialTeamSection{
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    .heading{
+        font-family: 'Inter';
+        font-weight: 300;
+        font-size: 6.2rem;
+        background: linear-gradient(90deg, #00C4EC 0%, #22C9A8 64%, #6CD58F 90.5%);
+        width: fit-content;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .members{
+        background: url('../../../assets/teams/socialsBG.svg') no-repeat;
+        background-size: contain;
+        width: 90%;
+        min-height: 70vh;
+        display: flex;
+        background-position: center;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        .member{
+            display: grid;
+            justify-items: center;
+            width: 19rem;
+            height: 35rem;
+            padding: 4rem;
+            border-radius: 18.5rem;
+            background: linear-gradient(160deg, #001C34 0%, #005399 40%, #028795 79.2%, #5DDBAC 90.5%);
+            backdrop-filter: blur(12.5px);
+            text-align: center;
+            img{
+                height: 15rem;
+                width: 15rem;
+                object-fit: cover;
+                border-radius: 50%;
+                filter: drop-shadow(2.8rem 0.3rem 3rem rgba(0, 0, 0, 0.5));
+            }
+            h3{
+                font-family: 'Javanese Text';
+                font-weight: 400;
+                font-size: 2.8rem;
+            }
+            p{
+                font-family: 'Inter';
+                font-weight: 300;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

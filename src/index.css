@@ -5,6 +5,7 @@
 
 html{
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -23,6 +24,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
+  position: relative;
   scroll-behavior: smooth;
   scrollbar-width: 0px;
   background-color: black;
@@ -52,9 +54,9 @@ code {
   }
 }
 
-@media(max-width:900px){
+@media(max-width:860px){
   html{
-    font-size: 45%;
+    font-size: 43%;
   }
   
 }
