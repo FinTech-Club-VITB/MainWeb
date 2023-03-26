@@ -55,3 +55,11 @@
         }
     }
 }
+@media(max-width:760px){
+    .socialTeamSection{
+        text-align: center;
+        .members{
+            flex-wrap: wrap;
+        }
+    }
+}
