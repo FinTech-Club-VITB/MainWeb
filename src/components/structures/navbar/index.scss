@@ -3,7 +3,7 @@
 .navbar {
   position: fixed;
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.35));
-  min-width: 97vw;
+  min-width: 100vw;
   display: flex;
   justify-content: space-between;
   padding: 0 3.25rem;
@@ -41,61 +41,62 @@
     display: flex;
     justify-content: space-between;
     min-width: 38%;
-
-  }
-
-  .link {
-    padding: 1.2rem 0.6rem;
-    text-decoration: none !important;
-    color: white;
-    border-radius: 1rem;
-    font-family: 'inter';
-    font-weight: 400;
-    height: min-content;
-    text-align: center;
-    min-width: 10rem;
-  }
-
-  .link:hover {
-    transition: 0.3s ease;
-    cursor: pointer;
-    // background-color: rgba(255, 255, 255, 0.06);
-    // border: 0.01rem solid rgba(255, 255, 255, 0.08);
-    transform: scale(1.06);
-    font-weight: 600;
-  }
-
-  .navIcon{
-    width: 100%;
-    font-size: 1.6rem;
-    color: white;
-    text-align: center;
-  }
-  .eventMenu{
-    position: absolute;
-    min-width: 12%;
-    padding: 1.6rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 1rem;
-    margin-left: -4.8rem;
+    padding-right: 3rem;
     a{
       text-decoration: none;
     }
-    .link:hover{
-      background-color: rgba(255, 255, 255, 0.1);
+    .link {
+      padding: 1.2rem 0.6rem;
+      text-decoration: none !important;
+      color: white;
+      border-radius: 1rem;
+      font-family: 'inter';
+      font-weight: 400;
+      height: min-content;
+      text-align: center;
+      min-width: 10rem;
+    }
+  
+    .link:hover {
+      transition: 0.3s ease;
+      cursor: pointer;
+      // background-color: rgba(255, 255, 255, 0.06);
+      // border: 0.01rem solid rgba(255, 255, 255, 0.08);
+      transform: scale(1.06);
+      font-weight: 600;
+    }
+  
+    .navIcon{
+      width: 100%;
+      font-size: 1.6rem;
+      color: white;
+      text-align: center;
+    }
+    .eventMenu{
+      position: absolute;
+      min-width: 12%;
+      padding: 1.6rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 1rem;
+      margin-left: -4.8rem;
+      .link:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+      }
     }
   }
+
   .menuIcon{
     position: fixed;
     right: 0;
     padding: 3rem;
-    font-size: 3.6rem;
+    font-size: 4.2rem;
     z-index: 10;
   }
 }
 
 @media(max-width:700px){
   .navbar{
+    padding: 0;
     .menu{
       font-size: 2rem;
       position: absolute;
@@ -108,10 +109,16 @@
       width: 100vw;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.8);
+      .eventMenu{
+        transform: translateX(-5vw);
+        background-color: rgba(0, 0, 0, 0.9);
+      }
     }
-    .eventMenu{
-      transform: translateX(-5vw);
-      background-color: rgba(0, 0, 0, 0.9);
+    .logo {
+      width: 19rem;
+    }
+    .scrolledLogo{
+      width: 16.8rem;
     }
   }
 }

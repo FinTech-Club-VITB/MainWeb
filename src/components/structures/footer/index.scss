@@ -6,10 +6,12 @@
     position: relative;
     padding-top: 1rem;
     .footerTopSection{
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        // justify-content: space-around;
         // align-items: center;
+        grid-template-columns: 22vw 20vw 20vw 30vw;
         padding: 2rem;
+        margin: auto 3vw;
         h3{
             font-family: 'Source Sans Pro';
             font-weight: 700;
@@ -78,6 +80,15 @@
 @media(max-width:700px){
     .footerSection{
         .footerTopSection{
+            grid-template-columns: 30vw 30vw 30vw;
+            justify-items: center;
+            margin-bottom: 2rem;
+            .footerClubInfo{
+                justify-self: flex-start;
+                grid-row: 1;
+                grid-column: 1/4;                
+                margin-bottom: 5rem;
+            }
             h3{
                 font-size: 2.2rem;
             }

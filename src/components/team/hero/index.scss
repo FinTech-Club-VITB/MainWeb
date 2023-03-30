@@ -35,3 +35,11 @@
         max-width: 30%;
     }
 }
+
+@media(max-width:700px){
+    .teamsHeroSection{
+        .para{
+            max-width: 60%;
+        }
+    }
+}

@@ -1,8 +1,9 @@
-.marketTeamSection{
-    background: url('../../../assets/teams/marketBG.svg') no-repeat;
+.contentTeamSection{
+    background: url('../../../assets/teams/contentBG.svg') no-repeat;
     background-size: contain;
     text-align: center;
     padding: 2rem 0;
+    margin-top: 2rem;
     .heading{
         font-family: 'Inter';
         padding: 2rem 0 4rem;
@@ -41,7 +42,7 @@
     }
 }
 @media(max-width:380px){
-    .marketTeamSection{
+    .contentTeamSection{
         .members{
             .member{
                 width: 21rem;

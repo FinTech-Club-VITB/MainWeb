@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 
-const SocialMember = (props) => {
+const WebMember = (props) => {
   return (
     <div className='member'>
         <img src={props.image} alt='' />
@@ -11,4 +11,4 @@ const SocialMember = (props) => {
   )
 }
 
-export default SocialMember
+export default WebMember
