@@ -6,6 +6,7 @@ import Management from './management'
 import Market from './market'
 import PR from './pr'
 import Social from './social'
+import Technical from './technical'
 import Web from './web'
 
 const Team = () => {
@@ -18,7 +19,7 @@ const Team = () => {
       <Market/>
       <PR/>
       <Content/>
-      {/* <Technical/> */}
+      <Technical/>
       <Web/>
     </div>
   )

@@ -6,10 +6,12 @@
     background: url('../../../assets/teams/webBG.svg') no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 3rem 0;
     .heading{
         font-family: 'Inter';
         font-weight: 300;
         font-size: 6.2rem;
+        margin-top: 2rem;
         background: linear-gradient(90deg, #FF9FB8 0%, #D001E3 44%, #3A33C5 92.5%);
         width: fit-content;
         -webkit-background-clip: text;

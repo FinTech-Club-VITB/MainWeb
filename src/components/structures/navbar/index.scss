@@ -109,16 +109,16 @@
       width: 100vw;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.8);
+      .eventMenu{
+        transform: translateX(-5vw);
+        background-color: rgba(0, 0, 0, 0.9);
+      }
     }
     .logo {
       width: 19rem;
     }
     .scrolledLogo{
       width: 16.8rem;
-    }
-    .eventMenu{
-      transform: translateX(-5vw);
-      background-color: rgba(0, 0, 0, 0.9);
     }
   }
 }

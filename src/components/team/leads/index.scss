@@ -2,7 +2,8 @@
     min-height: 100vh;
     display: grid;
     align-items: center;
-    .heading{
+    // justify-content: center;
+    .heading{   
         background: linear-gradient(90deg, #FFA1B8 0%, #F300EB 50%, #3527A3 90.5%);
         align-self: end;
         margin: 4rem 8rem;
@@ -25,6 +26,12 @@
         justify-content: center;
         text-align: center;
         font-family: 'Javanese Text';
+        .up{
+            flex-direction: column;
+        }
+        .down{
+            flex-direction: column-reverse;
+        }
         .member{
             display: flex;
             justify-content: center;
@@ -66,6 +73,70 @@
                 max-width: 22vh;
                 // font-size: 1.2rem;
                 word-wrap: break-word;
+            }
+        }
+    }
+}
+
+@media(max-width:700px){
+    .leadSection{
+        min-height: unset;
+        justify-content: center;
+        .members{
+            // transform: rotateZ(90deg);
+            min-height: unset;
+            flex-direction: column;
+            background: unset;
+            padding-bottom: 5rem;
+            .up{
+                flex-direction: row;
+                background: url('../../../assets/teams/coreBG.svg') no-repeat;
+                background-position: center;
+            }
+            .down{
+                flex-direction: row-reverse;
+            }
+            .member{
+                background-size: contain;
+                max-width: unset;
+                padding: 1rem;
+                h2{
+                    width: 12rem;
+                    font-size: 1.3rem;
+                    line-height: 2.4rem;
+                }
+                h3{
+                    line-height: 2.4rem;
+                }
+                p{
+                    width: 18rem;
+                    transform: translateY(2rem);
+                }
+                svg{
+                    transform: rotateZ(270deg);
+                }
+                img{
+                    width:11.5rem;
+                    height:11.5rem;
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:550px){
+    .leadSection{
+        .members{
+            max-width: 98vw;
+            .member{
+                div{
+                    display: none;
+                }
+                img{
+                    width: 9rem;
+                    height: 9rem;
+                }
             }
         }
     }

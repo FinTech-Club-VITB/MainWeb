@@ -11,9 +11,9 @@ const Leads = () => {
         <div className='members'>
           {leads.map((member, index) => {
             if(index%2===0)
-              return <Member {...member} arrow={<HiOutlineArrowLongDown/>} />
+              return <Member {...member} cls='up' arrow={<HiOutlineArrowLongDown/>} />
             else
-              return <Member {...member} direction='column-reverse' arrow={<HiOutlineArrowLongUp/>} />
+              return <Member {...member} cls='down' arrow={<HiOutlineArrowLongUp/>} />
           })}
         </div>
     </div>
