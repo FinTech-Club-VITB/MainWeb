@@ -1,0 +1,23 @@
+.f101HeroSection{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../../../assets/events/f101/heroBG.svg') center no-repeat;
+    position: relative;
+    text-align: center;
+    .heroTitle{
+        font-weight: 300;
+        font-size: 6rem;
+        letter-spacing: 0.2rem;
+        padding: 2rem 5rem;
+        margin-bottom: 2rem;
+        background-color: black;
+    }
+    .heroInfo{
+        font-weight: 500;
+        font-size: 4rem;
+        letter-spacing: 0.4rem;
+    }
+}

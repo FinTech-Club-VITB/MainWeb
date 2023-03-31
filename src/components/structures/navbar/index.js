@@ -26,7 +26,7 @@ const Navbar = () => {
       <AiFillCaretUp className='navIcon'/>
       <div className='eventMenu'>
         <Link to='/events/auction-arena'><h2 className='link'>AUCTION ARENA</h2></Link>    
-        <Link to='/events/basics-of-finance'><h2 className='link'>FINANCE 101</h2></Link>    
+        <Link to='/events/finance101'><h2 className='link'>FINANCE 101</h2></Link>    
         <Link to='/events/finwizz'><h2 className='link'>FINWIZZ</h2></Link>    
       </div>
     </> :

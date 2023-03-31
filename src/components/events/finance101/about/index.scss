@@ -1,0 +1,38 @@
+.f101About{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    background: url('../../../../assets/events/f101/about.svg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 4rem 0 0 4rem;
+    margin-bottom: 2rem;
+    .aboutTitle{
+        font-weight: 300;
+        font-size: 6rem;
+        margin-top: 4rem;
+        letter-spacing: 0.2rem;
+        background: linear-gradient(180deg, #00FFFF 0%, #F694FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    .aboutPara{
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        max-width: 50vw;
+    }
+}
+
+@media(max-width:450px){
+    .f101About{
+        min-height: 80vh;
+        .aboutPara{
+            max-width: 70vw;
+        }
+    }
+}
