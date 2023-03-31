@@ -1,0 +1,55 @@
+.finwizzHeroSection{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background: url('../../../../assets/events/finwizz/heroBG.svg') no-repeat;
+    background-size: cover;
+    position: relative;
+    .heroTitle{
+        max-width: 40vw;
+        font-weight: 400;
+        font-size: 5.2rem;
+        letter-spacing: 0.2rem;
+        padding: 2rem 5rem;
+        margin-bottom: 2rem;
+        span{
+            text-shadow: 0.3rem 0.3rem 1.2rem #FFC700;
+        }
+    }
+    .heroInfo{
+        max-width: 40vw;
+        font-weight: 300;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        padding: 0 5rem;
+    }
+    .heroRegister{
+        position: absolute;
+        font-size: 1.8rem;
+        bottom: 1.2rem;
+        left: 2rem;
+    }
+}
+@media(max-width:450px){
+    .finwizzHeroSection{
+        background-position: right;
+        // justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        .heroTitle{
+            max-width: unset;
+            font-size: 7rem;
+        }
+        .heroInfo{
+            max-width: 70vw;
+            font-size: 2rem;
+        }
+        .heroRegister{
+            bottom: 7rem;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+}

@@ -7,6 +7,7 @@ const Hero = () => {
     <div className='f101HeroSection'>
         <h2 className='heroTitle'>FINANCE 101</h2>
         <h3 className='heroInfo'>BASICS OF STOCK MARKET</h3>
+        <p className='heroRegister'>Registeration Closed!</p>
         <Socials arrow=''/>
     </div>
   )

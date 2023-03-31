@@ -1,0 +1,56 @@
+.arenaAbout{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    gap: 6rem;
+    flex-direction: column;
+    background: url('../../../../assets/events/auctionArena/about.svg') no-repeat;
+    background-size: cover;
+    .aboutTitle{
+        font-weight: 300;
+        font-size: 4.6rem;
+        letter-spacing: 0.2rem;
+        margin: 5rem 0 0 10rem;
+    }
+    .aboutParaSection{
+        margin: 4rem 1rem 3rem 15rem;
+        max-width: 55vw;
+        .aboutPara{
+            font-weight: 300;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            margin: 2rem;
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .arenaAbout{
+        .aboutTitle{
+            margin: 6rem 0 0 12rem;
+        }
+        .aboutParaSection{
+            margin: 9.4rem 1rem 3rem 20rem;
+            max-width: 70vw;
+            .aboutPara{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+@media(max-width:575px){
+    .arenaAbout{
+        min-height: 90vh;
+        background-position: center;
+        .aboutTitle{
+            margin: 10rem auto 0;
+        }
+        .aboutParaSection{
+            max-width: 82vw;
+            margin: 5rem auto 0;
+            .aboutPara{
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

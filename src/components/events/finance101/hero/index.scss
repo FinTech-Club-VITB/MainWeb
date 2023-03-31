@@ -20,4 +20,18 @@
         font-size: 4rem;
         letter-spacing: 0.4rem;
     }
+    .heroRegister{
+        position: absolute;
+        font-size: 1.8rem;
+        bottom: 1.2rem;
+        left: 2rem;
+    }
+}
+@media(max-width:450px){
+    .f101HeroSection{
+        .heroRegister{
+            bottom: 7rem;
+            left: unset;
+        }
+    }
 }
