@@ -7,6 +7,9 @@ import Resources from "./components/resources";
 import {Routes, Route} from 'react-router-dom'
 import ScrollToTop from "./components/common/scrollToTop";
 import Page404 from "./components/common/page404";
+import Finance101 from "./components/events/finance101";
+import Finwizz from "./components/events/finwizz";
+import AuctionArena from "./components/events/auctionArena";
 
 function App() {
   return (
@@ -15,7 +18,13 @@ function App() {
       <Navbar/>
       <Routes>
         <Route exact element={<Home/>} path='/'/>
-        <Route element={<Event/>} path='/events'/>
+        <Route element={<Finance101/>} path='/events/finance101'/>
+        <Route element={<Finwizz/>} path='/events/finwizz'/>
+        <Route element={<AuctionArena/>} path='/events/auction-arena'/>
+        {/* <Route element={<Event/>} path='/events'>
+          <Route element={<Finance101/>} path='/events/finance101'/>
+          <Route element={<Finance101/>} path='/events/finance101'/>
+        </Route> */}
         <Route element={<Team/>} path='/our-team'/>
         {/* <Route element={<Resources/>} path='/resources'/> */}
         <Route path='*' element={<Page404/>}/>

@@ -1,0 +1,59 @@
+.arenaSchedule{
+    background: url('../../../../assets/events/auctionArena/scheduleBG.svg') bottom no-repeat;
+    background-size: cover;
+    background-color: #000C14;
+    position: relative;
+    h2{
+        position: absolute;
+        font-size: 5.8rem;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+        bottom: 1rem;
+        left: 2rem;
+    }
+    .scheduleInfo{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: center;
+        min-height: 90vh;
+        span{
+            max-width: 30vw;
+            background: rgba(13, 13, 13, 0.6);
+            box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.8);
+            border-radius: 2.4rem;
+            padding: 12rem 5rem;
+            margin-top: 7rem;
+            h3{
+                font-weight: 400;
+                font-size: 3.8rem;
+                margin-bottom: 7rem; 
+            }
+            p{
+                font-weight: 300;
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                max-width: 25vw;
+            }
+        }
+    }
+}
+
+@media(max-width:520px){
+    .arenaSchedule{
+        h2{
+            font-size: 4.2rem;
+        }
+        .scheduleInfo{
+            padding: 7rem 0;
+            flex-direction: column;
+            span{
+                min-width: 70vw;
+                margin: 3rem auto;
+                p{
+                    max-width: unset;
+                }
+            }
+        }
+    }
+}

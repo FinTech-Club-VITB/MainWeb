@@ -1,0 +1,93 @@
+.f101Speaker{
+    background: linear-gradient(98.3deg, #0B008D 1.89%, #B600C6 94.86%);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    .speakerSubSection{
+        min-width: 90vw;
+        min-height: 90vh;
+        background-color: black;
+        box-shadow: 1rem 1rem 4rem #000000;
+        position: relative;
+        h2{
+            padding: 4rem 0 2rem 6rem;
+            font-size: 6rem;
+            font-weight: 300;
+            letter-spacing: 0.4rem;
+            position: relative;
+            z-index: 2;
+        }
+        .speakerInfo{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            min-height: 65vh;
+            .headingBG{
+                position: absolute;
+                background: url('../../../../assets/events/f101/speakerBG.svg') no-repeat;
+                background-size: contain;
+                width: 30vw;
+                height: 30vh;
+                top: 0;
+                left: 6rem;
+            }
+            span{
+                z-index: 2;
+                width: 50vw;
+                background: rgba(13, 13, 13, 0.6);
+                box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.8);
+                border-radius: 2.4rem;
+                padding: 3rem;
+                h3{
+                    font-weight: 700;
+                    font-size: 3.6rem;
+                    margin: 1rem 0 3rem;
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                }
+            }
+            .speakerImage{
+                width: 34rem;
+                height: 40rem;
+                object-fit: cover;
+                // filter: drop-shadow(33px 4px 40px rgba(0, 0, 0, 0.5));
+                border-radius: 2.4rem;
+            }
+        }
+        .speakerTopShadow{
+            position: absolute;
+            width: 100%;
+            height: 16rem;
+            background: linear-gradient(179.19deg, rgba(235, 1, 255, 0.22) 16.76%, rgba(0, 0, 0, 0.25) 99.3%);
+            transform: rotate(-0.66deg);
+        }
+        .speakerBottomShadow{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 16rem;
+            background: linear-gradient(179.19deg, rgba(0, 159, 227, 0.25) 16.76%, rgba(235, 1, 255, 0) 99.3%);
+            transform: rotate(-179.65deg);
+        }
+    }
+}
+
+@media(max-width:450px){
+    .f101Speaker{
+        .speakerSubSection{
+            .speakerInfo{
+                flex-direction: column-reverse;
+                span{
+                    width: 70vw;
+                    margin-bottom: 5rem;
+                }
+                .headingBG{
+                    top: 32vh;
+                }
+            }
+        }
+    }
+}
