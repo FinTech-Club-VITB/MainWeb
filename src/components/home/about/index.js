@@ -5,7 +5,7 @@ import phone from './images/phone-layers.png'
 
 const About = () => {
   return (
-    <div className='aboutSection'>
+    <div className='aboutSection' id='aboutSection'>
       <img className="background" src={background} alt="back" />
       <div className="gradabout"/>
       <div className="infoSection">
