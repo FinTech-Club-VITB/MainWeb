@@ -1,0 +1,69 @@
+.btbHeroSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../../../../assets/events/wikirace/heroBG.svg") center
+    no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  .darkSection {
+    background-color: rgba(0, 0, 0, 0.62);
+    height: 60vh;
+    width: 80vw;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10vh;
+    gap: 3rem;
+    .heroTitle {
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 7.6rem;
+      text-shadow: 0.5rem 0.2rem 0.2rem #f78aca;
+    }
+    .heroInfo {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 3.2rem;
+      letter-spacing: 0.4rem;
+      word-spacing: 1rem;
+    }
+    .heroRegister {
+      font-family: "Raleway";
+      font-weight: 400;
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      margin-top: 5rem;
+      padding: 1.2rem 4rem;
+      border-radius: 3rem;
+      background: linear-gradient(
+        180deg,
+        #bd00ff 0%,
+        rgba(106, 112, 255, 0) 100%
+      );
+    }
+    .heroRegister:hover {
+      cursor: pointer;
+      transform: scale(1.04) translateY(-0.5rem);
+      transition: transform 300ms ease-in-out;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .btbHeroSection {
+    .darkSection {
+      .heroTitle {
+        font-size: 4.8rem;
+        margin-bottom: 3rem;
+      }
+      .heroInfo {
+        font-size: 2rem;
+      }
+    }
+  }
+}

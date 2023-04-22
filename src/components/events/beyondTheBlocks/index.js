@@ -1,18 +1,18 @@
 import React from "react";
-import About from "./about";
 import Hero from "./hero";
+import About from "./about";
 import Speaker from "./speaker";
-// import Sponsor from "./sponsor";
+import Sponsor from "./sponsor";
 
-const Finwizz = () => {
+const BeyondTheBlocks = () => {
   return (
     <>
       <Hero />
       <About />
       <Speaker />
-      {/* <Sponsor/> */}
+      <Sponsor />
     </>
   );
 };
 
-export default Finwizz;
+export default BeyondTheBlocks;

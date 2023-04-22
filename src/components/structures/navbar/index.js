@@ -21,20 +21,31 @@ function useWindowPosition() {
 const Navbar = () => {
   // To change the navbar
   const [showMenu, setShowMenu] = useState(false);
-// For Showing Events on hover
+  // For Showing Events on hover
   const [showEvents, setShowEvents] = useState(false);
   const EventsMenu = showEvents ? (
     <>
       <AiFillCaretUp className="navIcon" />
       <div className="eventMenu">
+        <Link to="/events/beyond-the-blocks">
+          <h2 className="link" onClick={() => setShowMenu(false)}>
+            Beyond The Blocks
+          </h2>
+        </Link>
         <Link to="/events/auction-arena">
-          <h2 className="link" onClick={() => setShowMenu(false)}>AUCTION ARENA</h2>
+          <h2 className="link" onClick={() => setShowMenu(false)}>
+            AUCTION ARENA
+          </h2>
         </Link>
         <Link to="/events/finance101">
-          <h2 className="link" onClick={() => setShowMenu(false)}>FINANCE 101</h2>
+          <h2 className="link" onClick={() => setShowMenu(false)}>
+            FINANCE 101
+          </h2>
         </Link>
         <Link to="/events/finwizz">
-          <h2 className="link" onClick={() => setShowMenu(false)}>FINWIZZ</h2>
+          <h2 className="link" onClick={() => setShowMenu(false)}>
+            FINWIZZ
+          </h2>
         </Link>
       </div>
     </>
@@ -45,8 +56,10 @@ const Navbar = () => {
   );
   const menu = (
     <div className="menu">
-      <Link to="/" >
-        <h2 className="link" onClick={() => setShowMenu(false)}>HOME</h2>
+      <Link to="/">
+        <h2 className="link" onClick={() => setShowMenu(false)}>
+          HOME
+        </h2>
       </Link>
       <div
         onClick={() => {
@@ -58,12 +71,12 @@ const Navbar = () => {
         <h2 className="link">EVENTS</h2>
         {EventsMenu}
       </div>
-      <Link to="/our-team" >
+      {/* <Link to="/our-team" >
         <h2 className="link" onClick={() => setShowMenu(false)}>OUR TEAM</h2>
       </Link>
       <Link to="/resources">
         <h2 className="link" onClick={() => setShowMenu(false)}>RESOURCES</h2>
-      </Link>
+      </Link> */}
     </div>
   );
 
