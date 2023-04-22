@@ -32,7 +32,7 @@ const Testimonials = () => {
         {/* <LeftArrow/> */}
         <Slider {...settings}>
           {instaURLs.map((url) => (
-            <div className="testimonialSlide">
+            <div className="testimonialSlide" key={url}>
               <InstagramEmbed url={`https://www.instagram.com/reel/${url}/`} />
             </div>
           ))}
