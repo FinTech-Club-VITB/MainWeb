@@ -1,25 +1,40 @@
-import React from 'react'
-import './index.scss'
-import Person from '../../../../assets/teams/dummy.png'
+import React from "react";
+import "./index.scss";
+import Person from "../../../../assets/teams/dummy.png";
 
 const Speaker = () => {
   return (
-    <div className='f101Speaker'>
-      <div className='speakerSubSection'>
-        <div className='speakerTopShadow'/>
+    <div className="f101Speaker">
+      <div className="speakerSubSection">
+        <div className="speakerTopShadow" />
         <h2>OUR SPEAKER</h2>
-        <div className='speakerInfo'>
-          <div className='headingBG'/>
+        <div className="speakerInfo">
+          <div className="headingBG" />
           <span>
             <h3>NAMAN ARORA</h3>
-            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.t was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  Lorem Ipsum.t was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>
+              It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with
+              desktop publishing software like Aldus PageMaker including
+              versions of Lorem Ipsum.It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum passages, and
+              more recently with desktop publishing software like Aldus
+              PageMaker including versions of Lorem Ipsum.t was popularised in
+              the 1960s with the release of Letraset sheets containing Lorem
+              Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum. Lorem
+              Ipsum.t was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with
+              desktop publishing software like Aldus PageMaker including
+              versions of Lorem Ipsum.
+            </p>
           </span>
-          <img className='speakerImage' src={Person}/>
+          <img className="speakerImage" src={Person} alt="speaker" />
         </div>
-        <div className='speakerBottomShadow'/>
+        <div className="speakerBottomShadow" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Speaker
+export default Speaker;

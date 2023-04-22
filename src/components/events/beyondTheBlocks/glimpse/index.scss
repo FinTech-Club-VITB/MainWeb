@@ -1,0 +1,44 @@
+.btbGlimpseSection {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background: url("../../../../assets/events/wikirace/glimpseLeft.svg")
+    no-repeat;
+  background-size: contain;
+  background-position: -15%;
+  margin: 4rem 0;
+  .glimpseTitleContainer {
+    background: linear-gradient(
+      180deg,
+      #001a7a 0%,
+      #af06f5 49.79%,
+      #76007f 100%
+    );
+    padding: 0.3rem;
+    padding-left: 0;
+    margin-right: 6rem;
+
+    h2 {
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 7.2rem;
+      max-width: 76rem;
+      padding: 14rem 2rem;
+      background-color: black;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .btbGlimpseSection {
+    background-size: cover;
+    .glimpseTitleContainer {
+      opacity: 0.85;
+      margin-right: unset;
+      h2 {
+        text-align: center;
+        max-width: unset;
+      }
+    }
+  }
+}

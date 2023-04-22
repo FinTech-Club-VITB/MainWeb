@@ -1,20 +1,29 @@
 import React from "react";
 import "./index.scss";
 import Slider from "react-slick";
-import LeftArrow from './leftArrow.js'
+import LeftArrow from "./leftArrow.js";
 import RightArrow from "./rightArrow";
+import { InstagramEmbed } from "react-social-media-embed";
 
 const Testimonials = () => {
+  const slide = window.innerWidth > 700 ? 2 : 1;
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: slide,
+    slidesToScroll: slide,
 
     nextArrow: <RightArrow />,
-    prevArrow: <LeftArrow />
+    prevArrow: <LeftArrow />,
   };
 
+  const instaURLs = [
+    "CokmgFUAx7C",
+    "CoLDCTionN3",
+    "CnejioChqyG",
+    "CnSR_0lBaT7",
+    "CmQZKhJoH9k",
+  ];
   return (
     <div className="testimonialSection">
       <h2 className="testimonialHeading">GROW WITH US</h2>
@@ -22,15 +31,14 @@ const Testimonials = () => {
         {/* <FaChevronLeft className="leftArrow"/> */}
         {/* <LeftArrow/> */}
         <Slider {...settings}>
-          <div className="testimonialSlide">
-            <iframe src="https://www.youtube.com/embed/mH_LFkWxpI0" height={400} width={800} />
-          </div>
-          <div className="testimonialSlide">
-            <iframe src="https://www.youtube.com/embed/0S6Me1_tnco" height={400} width={800} />
-          </div>
+          {instaURLs.map((url) => (
+            <div className="testimonialSlide" key={url}>
+              <InstagramEmbed url={`https://www.instagram.com/reel/${url}/`} />
+            </div>
+          ))}
         </Slider>
-        <div className="testimonialBG1"/>
-        <div className="testimonialBG2"/>
+        <div className="testimonialBG1" />
+        <div className="testimonialBG2" />
       </div>
     </div>
   );

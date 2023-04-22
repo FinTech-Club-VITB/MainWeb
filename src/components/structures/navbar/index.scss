@@ -8,28 +8,28 @@
   justify-content: space-between;
   padding: 0 3.25rem;
   z-index: 10;
-  
+
   .logo {
     animation: turnBig 0.4s ease-in-out;
     margin: 1rem 1rem 0rem;
     width: 18rem;
   }
 
-  .scrolledLogo{
+  .scrolledLogo {
     animation: turnSmall 0.4s ease-in-out;
     width: 13.6rem;
     // margin: 1rem 2rem 0;
   }
 
   @keyframes turnSmall {
-    0%{
+    0% {
       // margin: 1rem 1rem 0rem;
       width: 18rem;
     }
   }
 
   @keyframes turnBig {
-    0%{
+    0% {
       // margin: 1rem 1rem 0rem;
       width: 13.6rem;
     }
@@ -40,9 +40,9 @@
     color: white;
     display: flex;
     justify-content: space-between;
-    min-width: 38%;
+    // min-width: 38%;
     padding-right: 3rem;
-    a{
+    a {
       text-decoration: none;
     }
     .link {
@@ -50,13 +50,13 @@
       text-decoration: none !important;
       color: white;
       border-radius: 1rem;
-      font-family: 'inter';
+      font-family: "inter";
       font-weight: 400;
       height: min-content;
       text-align: center;
       min-width: 10rem;
     }
-  
+
     .link:hover {
       transition: 0.3s ease;
       cursor: pointer;
@@ -65,27 +65,27 @@
       transform: scale(1.06);
       font-weight: 600;
     }
-  
-    .navIcon{
+
+    .navIcon {
       width: 100%;
       font-size: 1.6rem;
       color: white;
       text-align: center;
     }
-    .eventMenu{
+    .eventMenu {
       position: absolute;
       min-width: 12%;
       padding: 1.6rem;
       background-color: rgba(0, 0, 0, 0.5);
       border-radius: 1rem;
       margin-left: -4.8rem;
-      .link:hover{
+      .link:hover {
         background-color: rgba(255, 255, 255, 0.1);
       }
     }
   }
 
-  .menuIcon{
+  .menuIcon {
     position: fixed;
     right: 0;
     padding: 3rem;
@@ -94,10 +94,10 @@
   }
 }
 
-@media(max-width:700px){
-  .navbar{
+@media (max-width: 700px) {
+  .navbar {
     padding: 0;
-    .menu{
+    .menu {
       font-size: 2rem;
       position: absolute;
       flex-direction: column;
@@ -109,7 +109,7 @@
       width: 100vw;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.8);
-      .eventMenu{
+      .eventMenu {
         transform: translateX(-5vw);
         background-color: rgba(0, 0, 0, 0.9);
       }
@@ -117,7 +117,7 @@
     .logo {
       width: 19rem;
     }
-    .scrolledLogo{
+    .scrolledLogo {
       width: 16.8rem;
     }
   }

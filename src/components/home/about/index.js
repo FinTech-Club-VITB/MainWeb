@@ -1,34 +1,41 @@
-import React from 'react'
-import './index.scss'
-import background from './images/planet.png'
-import phone from './images/phone-layers.png'
+import React from "react";
+import "./index.scss";
+import background from "./images/planet.png";
+import phone from "./images/phone-layers.png";
 
 const About = () => {
   return (
-    <div className='aboutSection'>
+    <div className="aboutSection" id="aboutSection">
       <img className="background" src={background} alt="back" />
-      <div className="gradabout"/>
+      <div className="gradabout" />
       <div className="infoSection">
         <h1 className="heading">ABOUT US</h1>
         <p className="tagline">We built your feuture</p>
 
         <hr className="line" />
-        <p className="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting,
-          remaining essentially unchanged.
-          <br /><br /><br />
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          <br /><br /><br />
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          It has survived not only five centuries but also the leap into electronic typesetting, remaining essentially unchanged.
+        <p className="para">
+          At VIT Bhopal , the FinTech Club serves as an innovative platform
+          spearheaded by students who ardently seek to cultivate a keen interest
+          in finance. Their vision is to foster and nurture a financial acumen
+          within the institute, through a gamut of initiatives that resonate
+          with the practical world of finance.
+          <br />
+          <br />
+          The club harnesses the expertise of industry stalwarts, who unfurl
+          pearls of wisdom, highlighting the latest advancements in areas like
+          stocks, cryptocurrencies, and software tools.
+          <br />
+          <br />
+          These initiatives bestow a holistic experience that prepares students
+          to navigate the dynamic landscape of financial services with
+          confidence and finesse, ensuring that they are well prepared to handle
+          the nuances of the financial services industry in practical life.
         </p>
       </div>
       <img className="phone-layers" src={phone} data-value="5" alt="phone" />
     </div>
-  )
-}
+  );
+};
 
 // document.addEventListener("mousemove", parallax);
 // function parallax(e) {
@@ -41,4 +48,4 @@ const About = () => {
 //   });
 // }
 
-export default About
+export default About;

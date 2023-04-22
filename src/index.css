@@ -5,6 +5,7 @@
 
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -26,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 body {
   position: relative;
   scroll-behavior: smooth;
-  scrollbar-width: 0px;
+  scrollbar-width: 5px;
   background-color: black;
   overflow-x: hidden;
   color: white;

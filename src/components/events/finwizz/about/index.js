@@ -1,19 +1,29 @@
-import React from 'react'
-import './index.scss'
+import React from "react";
+import "./index.scss";
 
 const About = () => {
   return (
-    <div className='finwizzAbout'>
-      <div className='aboutTitleContainer'>
-        <h2 className='aboutTitle'>ABOUT THE EVENT</h2>
+    <div className="finwizzAbout">
+      <div className="aboutTitleContainer">
+        <h2 className="aboutTitle">ABOUT THE EVENT</h2>
       </div>
 
-      <p className='aboutPara'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie but also the leap into electronic typesetting,remaining essentially unchanged. </p>
+      <p className="aboutPara">
+        The inception of FinTech Club VITB, an organization led by zealous
+        students, took place on the auspicious day of December 13th, 2022, with
+        the goal of cultivating a passion for finance among students as an
+        academic pursuit and a prospective vocation.
+      </p>
 
-      <p className='aboutPara'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie but also the leap into electronic typesetting,remaining essentially unchanged. 
-      <br/><br/>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p className="aboutPara">
+        The inauguration ceremony that followed was a momentous occasion,
+        augmented by the nail-biting competition of the FinWizz quiz,
+        characterized by a high-stakes buzzer format. The victorious "Margin
+        Call" team and the close runner-up "Team Equity" were presented with
+        thrilling gift hampers to honor their triumph.
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

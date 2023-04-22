@@ -1,0 +1,82 @@
+.btbAbout {
+  background: linear-gradient(98.3deg, #0b008d 1.89%, #b600c6 94.86%);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  span {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 4rem 0 0 4rem;
+    background-color: black;
+    box-shadow: 1rem 1rem 4rem #000000;
+    .aboutTitle {
+      font-weight: 300;
+      font-size: 6rem;
+      margin-top: 4rem;
+      letter-spacing: 0.2rem;
+      background: linear-gradient(180deg, #fafafa 49.79%, #be04ff 91.98%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    .btbAboutSection {
+      display: flex;
+      gap: 2.5rem;
+      .aboutInfoSection {
+        font-family: "Inter";
+        background: url(../../../../assets/events/wikirace/B101InfoBG.svg)
+          no-repeat left;
+        background-size: cover;
+        filter: drop-shadow(10px 10px 10px rgba(169, 0, 184, 0.32));
+        width: fit-content;
+        padding: 2rem;
+        border-radius: 3rem;
+        .aboutParaHead {
+          font-weight: 500;
+          font-size: 3.2rem;
+          margin-bottom: 3rem;
+        }
+        .aboutPara {
+          font-weight: 300;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          max-width: 50vw;
+        }
+      }
+      .aboutImg {
+        width: 35vw;
+        height: auto;
+        background: url("../../../../assets/events/wikirace/speaker.svg")
+          no-repeat right;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .btbAbout {
+    span {
+      padding: 1rem;
+      .aboutTitle {
+        text-align: center;
+      }
+      .btbAboutSection {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        .aboutInfoSection {
+          .aboutPara {
+            max-width: 85vw;
+          }
+        }
+        .aboutImg {
+          height: 40vh;
+          width: auto;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
