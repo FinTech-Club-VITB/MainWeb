@@ -11,6 +11,7 @@ import Finance101 from "./components/events/finance101";
 import Finwizz from "./components/events/finwizz";
 import AuctionArena from "./components/events/auctionArena";
 import BeyondTheBlocks from "./components/events/beyondTheBlocks";
+import RegisterForm from "./components/register";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route element={<Finwizz />} path="/events/finwizz" />
         <Route element={<AuctionArena />} path="/events/auction-arena" />
         <Route element={<BeyondTheBlocks />} path="/events/beyond-the-blocks" />
+        <Route element={<RegisterForm />} path="/events/register" />
         {/* <Route element={<Event/>} path='/events'>
           <Route element={<Finance101/>} path='/events/finance101'/>
           <Route element={<Finance101/>} path='/events/finance101'/>

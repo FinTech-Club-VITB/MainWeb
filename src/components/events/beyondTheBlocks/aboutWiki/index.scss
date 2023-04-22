@@ -1,0 +1,55 @@
+.btbAboutWiki {
+  width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background: url(../../../../assets/events/wikirace/AboutWikiBG.png);
+  background-size: cover;
+  gap: 6rem;
+  padding: 4rem 0 0 4rem;
+  span {
+    .aboutTitle {
+      font-weight: 300;
+      font-size: 8rem;
+      text-transform: uppercase;
+      margin-top: 4rem;
+      letter-spacing: 0.6rem;
+      word-spacing: 1.4rem;
+      background: linear-gradient(180deg, #fafafa 58.65%, #be04ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    .aboutPara {
+      font-family: "inter";
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 3.3rem;
+      max-width: 50vw;
+      margin: 2rem 0;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .btbAboutWiki {
+    background-position: center;
+    min-height: 80vh;
+    padding: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 3rem;
+      max-width: 85vw;
+      min-height: 70vh;
+      display: grid;
+      .aboutPara {
+        max-width: unset;
+      }
+    }
+  }
+}
