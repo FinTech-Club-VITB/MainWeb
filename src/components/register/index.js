@@ -3,7 +3,7 @@ import "./index.scss";
 
 const RegisterForm = () => {
   return (
-    <div>
+    <div className="registerationForm">
       <h1>
         The Form is Currently Down! <br />
         <br />
