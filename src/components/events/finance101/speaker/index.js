@@ -29,7 +29,7 @@ const Speaker = () => {
               versions of Lorem Ipsum.
             </p>
           </span>
-          <img className="speakerImage" src={Person} />
+          <img className="speakerImage" src={Person} alt="speaker" />
         </div>
         <div className="speakerBottomShadow" />
       </div>

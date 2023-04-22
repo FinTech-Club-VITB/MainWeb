@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.scss";
-import Person from "../../../../assets/teams/dummy.png";
 
 const Schedule = () => {
   return (

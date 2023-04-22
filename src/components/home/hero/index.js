@@ -16,10 +16,9 @@ const Hero = () => {
           <a
             href="https://chat.whatsapp.com/FqAeqLFPVjA5Nl7hWgguq2"
             target="_blank"
+            rel="noreferrer"
           >
-            <button className="heroJoinUs" role="button">
-              JOIN NOW
-            </button>
+            <button className="heroJoinUs">JOIN NOW</button>
           </a>
         </div>
         <Socials />

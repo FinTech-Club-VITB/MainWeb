@@ -15,19 +15,29 @@ const Socials = (props) => {
         <a
           href="https://instagram.com/fintechclub_vitb?igshid=ZDdkNTZiNTM="
           target="_blank"
+          rel="noreferrer"
         >
           <AiFillInstagram />
         </a>
         <a
           href="https://www.linkedin.com/company/fintech-club-vit-bhopal/"
           target="_blank"
+          rel="noreferrer"
         >
           <AiFillLinkedin />
         </a>
-        <a href="https://twitter.com/fintech_vitb" target="_blank">
+        <a
+          href="https://twitter.com/fintech_vitb"
+          target="_blank"
+          rel="noreferrer"
+        >
           <AiFillTwitterSquare />
         </a>
-        <a href="https://youtube.com/@fintechclub-vitb" target="_blank">
+        <a
+          href="https://youtube.com/@fintechclub-vitb"
+          target="_blank"
+          rel="noreferrer"
+        >
           <AiFillYoutube />
         </a>
       </div>

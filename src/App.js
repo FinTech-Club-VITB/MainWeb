@@ -1,9 +1,9 @@
 import Home from "./components/home";
 import Footer from "./components/structures/footer";
 import Navbar from "./components/structures/navbar";
-import Event from "./components/events";
-import Team from "./components/team";
-import Resources from "./components/resources";
+// import Event from "./components/events";
+// import Team from "./components/team";
+// import Resources from "./components/resources";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/common/scrollToTop";
 import Page404 from "./components/common/page404";
